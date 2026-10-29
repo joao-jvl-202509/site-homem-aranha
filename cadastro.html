@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Inscreva-se em uma atividade temática sobre o universo do Homem-Aranha.">
+    <title>Cadastro — Aranhaverso</title>
+</head>
+<body>
+    <a href="#conteudo">Pular para o conteúdo</a>
+
+    <header>
+        <h1>Aranhaverso</h1>
+        <p>Inscreva-se para participar de nossa atividade temática.</p>
+    </header>
+
+    <nav aria-label="Menu principal">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="dados.html">Dados</a></li>
+            <li><a href="cadastro.html" aria-current="page">Cadastro</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main id="conteudo">
+        <section>
+            <h2>Formulário de inscrição</h2>
+            <p>Preencha os campos abaixo para demonstrar interesse na atividade.</p>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Dados pessoais</legend>
+
+                    <p><label for="nome">Nome completo:</label>
+                        <input type="text" id="nome" name="nome"
+                               autocomplete="name" required></p>
+
+                    <p><label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email"
+                               autocomplete="email" required></p>
+
+                    <p><label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone"
+                               autocomplete="tel"></p>
+
+                    <p><label for="nascimento">Data de nascimento:</label>
+                        <input type="date" id="nascimento" name="nascimento"
+                               autocomplete="bday" required></p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferências da atividade</legend>
+
+                    <p>Qual é o seu Homem-Aranha favorito?</p>
+
+                    <p><input type="radio" id="peter" name="aranha_favorito"
+                               value="Peter Parker" required>
+                        <label for="peter">Peter Parker</label></p>
+
+                    <p><input type="radio" id="miles" name="aranha_favorito"
+                               value="Miles Morales">
+                        <label for="miles">Miles Morales</label></p>
+
+                    <p><input type="radio" id="gwen" name="aranha_favorito"
+                               value="Gwen Stacy">
+                        <label for="gwen">Gwen Stacy</label></p>
+
+                    <p><label for="idade">Idade:</label>
+                        <input type="number" id="idade" name="idade"
+                               min="1" max="120"></p>
+
+                    <p><label for="nota">Quanto você gosta do personagem? (0 a 10, com decimais):</label>
+                        <input type="number" id="nota" name="nota"
+                               min="0" max="10" step="0.1"></p>
+
+                    <p><label for="atividade">Atividade de interesse:</label>
+                        <select id="atividade" name="atividade" required>
+                            <option value="">Selecione uma opção</option>
+                            <option value="quiz">Quiz sobre o herói</option>
+                            <option value="quadrinhos">Leitura de quadrinhos</option>
+                            <option value="filmes">Debate sobre os filmes</option>
+                        </select></p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Interesses e confirmação</legend>
+
+                    <p>Quais conteúdos você gostaria de explorar?</p>
+
+                    <p><input type="checkbox" id="filmes" name="interesses"
+                               value="Filmes">
+                        <label for="filmes">Filmes</label></p>
+
+                    <p><input type="checkbox" id="quadrinhos" name="interesses"
+                               value="Quadrinhos">
+                        <label for="quadrinhos">Quadrinhos</label></p>
+
+                    <p><input type="checkbox" id="jogos" name="interesses"
+                               value="Jogos">
+                        <label for="jogos">Jogos</label></p>
+
+                    <p><input type="checkbox" id="termos" name="termos"
+                               value="aceito" required>
+                        <label for="termos">Confirmo que li as informações do formulário.</label></p>
+
+                    <p><label for="comentario">Conte por que você gosta do Homem-Aranha (máximo de 300 caracteres):</label>
+                        <textarea id="comentario" name="comentario"
+                                  rows="5" maxlength="300"></textarea></p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Finalizar</legend>
+
+                    <button type="submit">Enviar cadastro</button>
+                    <button type="reset">Limpar formulário</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por: João Vitor Lourenço | 2026</p>
+    </footer>
+</body>
+</html>
