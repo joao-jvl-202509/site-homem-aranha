@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entre em contato com a equipe fictícia do site Aranhaverso.">
+    <title>Contato — Aranhaverso</title>
+</head>
+<body>
+    <a href="#conteudo">Pular para o conteúdo</a>
+
+    <header>
+        <h1>Aranhaverso</h1>
+        <p>Entre em contato com a equipe do site.</p>
+    </header>
+
+    <nav aria-label="Menu principal">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="dados.html">Dados</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="contato.html" aria-current="page">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main id="conteudo">
+        <section>
+            <h2>Fale conosco</h2>
+            <p>
+                Tem alguma dúvida, sugestão ou ideia para o nosso site?
+                Utilize as informações fictícias abaixo ou preencha o formulário.
+            </p>
+
+            <h3>Informações de contato</h3>
+            <address>
+                Equipe Aranhaverso<br>
+                Rua Urussanga, 123<br>
+                Bairro Bucarein, Joinville — SC<br>
+                CEP: 89201-450<br>
+                E-mail:
+                <a href="mailto:contatoaranhaverso@gmail.com">
+                    contatoaranhaverso@gmail.com
+                </a><br>
+                Telefone:
+                <a href="tel:+5547988347261">+55 (47) 98834-7261</a>
+            </address>
+        </section>
+
+        <section>
+            <h2>Horário de atendimento</h2>
+            <dl>
+                <dt>Segunda a sexta-feira</dt>
+                <dd>Das 9h às 17h.</dd>
+
+                <dt>Sábado</dt>
+                <dd>Das 9h às 12h.</dd>
+
+                <dt>Domingo e feriados</dt>
+                <dd>Sem atendimento.</dd>
+            </dl>
+
+            <p>
+                <a href="https://maps.app.goo.gl/QpE4pk8NPQud89y76"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Consultar endereço em um serviço de mapas
+                </a>
+            </p>
+            <p>O endereço é fictício e serve apenas como exemplo para o trabalho.</p>
+        </section>
+
+        <section>
+            <h2>Envie uma mensagem</h2>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Seus dados</legend>
+
+                    <p>
+                        <label for="nome-contato">Nome:</label>
+                        <input type="text" id="nome-contato" name="nome"
+                               autocomplete="name" required>
+                    </p>
+
+                    <p>
+                        <label for="email-contato">E-mail:</label>
+                        <input type="email" id="email-contato" name="email"
+                               autocomplete="email" required>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Mensagem</legend>
+
+                    <p>
+                        <label for="assunto">Assunto:</label>
+                        <select id="assunto" name="assunto" required>
+                            <option value="">Selecione um assunto</option>
+                            <option value="duvida">Dúvida</option>
+                            <option value="sugestao">Sugestão</option>
+                            <option value="elogio">Elogio</option>
+                            <option value="outro">Outro assunto</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="mensagem">Sua mensagem:</label>
+                        <textarea id="mensagem" name="mensagem"
+                                  rows="6" maxlength="300"
+                                  required></textarea>
+                    </p>
+
+                    <button type="submit">Enviar mensagem</button>
+                    <button type="reset">Limpar formulário</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por: João Vitor Lourenço | 2026</p>
+    </footer>
+</body>
+</html>
